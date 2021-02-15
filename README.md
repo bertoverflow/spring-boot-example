@@ -2,16 +2,22 @@
 
 Example project for workshops.
 
+## Requirements
+
+* maven
+* java 8
+* docker
+
 ## Build
 
 ```bash
-./mvnw package --batch-mode
+mvn package
 ```
 
 ## Test
 
 ```bash
-./mvnw test --batch-mode --fail-at-end
+mvn test --fail-at-end
 ```
 
 ## Build with Docker
