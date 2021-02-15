@@ -4,13 +4,13 @@ Example project for workshops.
 
 ## Build
 
-```shell
+```bash
 ./mvnw package --batch-mode
 ```
 
 ## Test
 
-```shell
+```bash
 ./mvnw test --batch-mode --fail-at-end
 ```
 
@@ -18,7 +18,7 @@ Example project for workshops.
 
 The Dockerfile includes the `mvn package`.
 
-```shell
+```bash
 docker build -f Dockerfile.FullBuild -t spring-boot-example .
 ```
 
@@ -27,6 +27,6 @@ docker build -f Dockerfile.FullBuild -t spring-boot-example .
 The Dockerfile does not include `mvn package`.
 It expects a jar-file in the `target`-directory.
 
-```shell
+```bash
 docker build -f Dockerfile.Package -t spring-boot-example .
 ```
